@@ -1,0 +1,234 @@
+$bgDark : #313638;
+$navBarkHeight: 60px;
+$text_light : #E8EDDF;
+$menuHeight : 150px;
+$bgPurple : #662E9B;
+$bgRed : #D50000;
+$bgOrange: #E4B363;
+$bgBody : #BDBDBD;
+$bgMenu : #F6F7F7;
+$bgBlue : #2962ff;
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+//@import "~bootstrap/dist/css/bootstrap.min.css";
+//@import "~bootstrap/scss/bootstrap";
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: $bgBody !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom_navBar{
+  background-color: $bgDark;
+  height: $navBarkHeight;
+  border-bottom: 3px $bgRed solid;
+}
+
+.text_light{
+  color: $text_light;
+}
+
+.menu{
+  height: $menuHeight;
+  //border: 1px #54B85E solid;
+  border-radius: 68px;
+  margin-top: 8rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.bgPurple{
+  background-color: $bgPurple;
+}
+
+.bgOrange{
+  background-color: $bgOrange;
+}
+
+.bgRed{
+  background-color: $bgRed !important;
+}
+
+.colorRed{
+  color: $bgRed !important;
+}
+
+.bgBlue{
+  background-color: $bgBlue;
+}
+
+.menuSvg{
+  position: relative;
+  right: +1px;
+}
+
+.bgMenu{
+  background-color: $bgMenu;
+}
+
+.shadowMenu{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+.menu:hover{
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.40);
+  background-color: #edeeee;
+}
+.pannel{
+  border-top : 2px $bgRed solid;
+}
+.iconBar{
+  border-bottom: 1px #C8C9CA solid;
+  height: 40px;
+  padding-top: 4px;
+}
+
+.middelBlock{
+  height: 24rem;
+}
+
+.menuNavBar{
+  transform: translateY(-100%);
+}
+.navTitel{
+  transform: translateX(-100%);
+}
+
+.testClass{
+  .ReactVirtualized__Table__row{
+    height: auto !important;
+  }
+}
+
+.row-fade-appear {
+  opacity: 0 !important;
+}
+.row-fade-appear-active {
+  opacity: 1 !important;
+  transition: opacity 500ms ease-in-out !important;
+}
+
+.row-fade-enter {
+  opacity: 0 !important;
+}
+.row-fade-enter-active {
+  opacity: 1 !important;
+  transition: opacity 500ms ease-in-out !important;
+}
+
+.row-fade-exit {
+  opacity: 1 !important;
+}
+.row-fade-exit-active {
+  opacity: 0 !important;
+  transition: opacity 500ms ease-in-out !important;
+}
+
+
+/* Reduit le menu du mileu */
+.littelMenu-enter, .littelMenu-enter-done{
+  transform: translateY(-24rem);
+  transition: all 500ms ease-in-out;
+}
+
+
+.littelMenu-exit, .littelMenu-exit-done{
+  transform: translateY(0);
+  transition: all 500ms ease-in-out;
+}
+
+/* Fait apparaitre le menu dans la navBar */
+
+.navLittelMenu-enter, .navLittelMenu-enter-done{
+  transform: translateY(0);
+  transition: all 500ms ease-in-out 300ms;
+}
+
+
+.navLittelMenu-exit, .navLittelMenu-exit-done{
+  transform: translateY(-100%);
+  transition: all 500ms ease-in-out;
+}
+
+
+/***************/
+
+.navTitelAnim-enter, .navTitelAnim-enter-done{
+  transform: translateX(0);
+  transition: all 500ms ease-in-out;
+}
+
+
+.navTitelAnim-exit, .navTitelAnim-exit-done{
+  transform: translateX(-100%);
+  transition: all 500ms ease-in-out 300ms;
+}
+
+/*******************/
+
+.mainFade-appear{
+  opacity: 0;
+
+}
+
+.mainFade-appear-done{
+  opacity: 1;
+  transition: all 800ms ease-in-out;
+
+}
+
+.mainFade-enter, .mainFade-enter-done{
+
+}
+
+/***************************/
+
+
+
+.addInstallationDialogOptionsFade-enter{
+  max-height: 1000px !important;
+  transition: all 300ms ease-in-out !important;
+}
+
+.addInstallationDialogOptionsFade-enter-done{
+  opacity: 1 !important;
+  max-height: 1000px !important;
+  transition: all 300ms ease-in-out !important;
+}
+.addInstallationDialogOptionsFade-exit{
+  opacity: 0 !important;
+  transition: all 300ms ease-in-out !important;
+}
+
+.addInstallationDialogOptionsFade-exit-done{
+  opacity: 0 !important;
+  max-height: 0 !important;
+  transition: all 300ms ease-in-out !important;
+}
+
+
+.addInstallationDialogOptionsFade-appear-done{
+  opacity: 0;
+  max-height: 0;
+  transition: all 300ms ease-in-out;
+}
+
+
+.addInstallationDialogOptionsFade-appear-done{
+  opacity: 0;
+  max-height: 0;
+  transition: all 300ms ease-in-out;
+}
